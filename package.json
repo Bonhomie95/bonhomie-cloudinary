@@ -1,6 +1,6 @@
 {
   "name": "@bonhomie/cloudinary-super-uploader",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "description": "A powerful React + Node Cloudinary toolkit with drag & drop, browser compression, EXIF checks, duplicate detection, signed uploads, and more.",
   "main": "dist/index.cjs",
