@@ -61,7 +61,7 @@
     "node cloudinary"
   ],
   "scripts": {
-    "build": "tsup src/index.js --dts --format esm,cjs --minify",
+    "build": "tsup src/index.js src/node/index.js --format esm,cjs --minify",
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -71,6 +71,7 @@
     "cloudinary": "^2.8.0",
     "exif-parser": "^0.1.12",
     "image-hash": "^7.0.1",
+    "react": "^19.2.0",
     "sharp": "^0.34.5"
   },
   "devDependencies": {

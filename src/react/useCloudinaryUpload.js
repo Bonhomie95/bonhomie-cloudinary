@@ -1,10 +1,9 @@
-// src/react/useCloudinaryUpload.js
 import { useCallback, useState } from 'react';
-import compressImageBrowser from './utils/compressImageBrowser';
-import getExifBrowser from './utils/getExifBrowser';
-import hashBrowser from './utils/hashBrowser';
-import validateDimensions from './utils/validateDimensions';
-import buildThumbnailUrl from './utils/buildThumbnailUrl';
+import compressImageBrowser from '../utils/compressImageBrowser';
+import getExifBrowser from '../utils/getExifBrowser';
+import hashBrowser from '../utils/hashBrowser';
+import validateDimensions from '../utils/validateDimensions';
+import buildThumbnailUrl from '../utils/buildThumbnailUrl';
 
 export default function useCloudinaryUpload(config = {}) {
   const {

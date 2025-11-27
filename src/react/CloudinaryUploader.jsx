@@ -1,5 +1,6 @@
-import React, { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import useCloudinaryUpload from './useCloudinaryUpload';
+import './cloudinary-uploader.css';
 
 export default function CloudinaryUploader(props) {
   const { images, progress, uploading, errors, upload, removeImage } =
