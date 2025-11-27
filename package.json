@@ -1,6 +1,6 @@
 {
   "name": "@bonhomie/cloudinary-super-uploader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "description": "A powerful React + Node Cloudinary toolkit with drag & drop, browser compression, EXIF checks, duplicate detection, signed uploads, and more.",
   "main": "dist/index.cjs",
@@ -10,44 +10,44 @@
     "dist"
   ],
   "sideEffects": false,
-"exports": {
-  ".": {
-    "import": "./dist/index.js",
-    "require": "./dist/index.cjs"
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./CloudinaryUploader": {
+      "import": "./dist/react/CloudinaryUploader.js",
+      "require": "./dist/react/CloudinaryUploader.cjs"
+    },
+    "./useCloudinaryUpload": {
+      "import": "./dist/react/useCloudinaryUpload.js",
+      "require": "./dist/react/useCloudinaryUpload.cjs"
+    },
+    "./node/uploadImage": {
+      "import": "./dist/node/uploadImage.js",
+      "require": "./dist/node/uploadImage.cjs"
+    },
+    "./node/uploadImages": {
+      "import": "./dist/node/uploadImages.js",
+      "require": "./dist/node/uploadImages.cjs"
+    },
+    "./node/compressImageNode": {
+      "import": "./dist/node/compressImageNode.js",
+      "require": "./dist/node/compressImageNode.cjs"
+    },
+    "./node/getExif": {
+      "import": "./dist/node/getExif.js",
+      "require": "./dist/node/getExif.cjs"
+    },
+    "./node/hashSHA256": {
+      "import": "./dist/node/hashSHA256.js",
+      "require": "./dist/node/hashSHA256.cjs"
+    },
+    "./node/validateQuality": {
+      "import": "./dist/node/validateQuality.js",
+      "require": "./dist/node/validateQuality.cjs"
+    }
   },
-  "./CloudinaryUploader": {
-    "import": "./dist/react/CloudinaryUploader.js",
-    "require": "./dist/react/CloudinaryUploader.cjs"
-  },
-  "./useCloudinaryUpload": {
-    "import": "./dist/react/useCloudinaryUpload.js",
-    "require": "./dist/react/useCloudinaryUpload.cjs"
-  },
-  "./node/uploadImage": {
-    "import": "./dist/node/uploadImage.js",
-    "require": "./dist/node/uploadImage.cjs"
-  },
-  "./node/uploadImages": {
-    "import": "./dist/node/uploadImages.js",
-    "require": "./dist/node/uploadImages.cjs"
-  },
-  "./node/compressImageNode": {
-    "import": "./dist/node/compressImageNode.js",
-    "require": "./dist/node/compressImageNode.cjs"
-  },
-  "./node/getExif": {
-    "import": "./dist/node/getExif.js",
-    "require": "./dist/node/getExif.cjs"
-  },
-  "./node/hashSHA256": {
-    "import": "./dist/node/hashSHA256.js",
-    "require": "./dist/node/hashSHA256.cjs"
-  },
-  "./node/validateQuality": {
-    "import": "./dist/node/validateQuality.js",
-    "require": "./dist/node/validateQuality.cjs"
-  }
-},
   "keywords": [
     "cloudinary",
     "cloudinary upload",
