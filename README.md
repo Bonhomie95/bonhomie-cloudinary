@@ -247,14 +247,3 @@ Full-stack Web & Mobile Developer
 
 Pull requests are welcome.
 If you love it, ⭐ star the repository on GitHub.
-
----
-
-If you want, I can generate:
-
-✅ A **GitHub repository description**
-✅ A **README banner image**
-✅ A **GitHub Wiki structure**
-✅ A **demo playground** (CodeSandbox)
-
-Just say the word, bro.
