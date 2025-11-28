@@ -1,6 +1,6 @@
 {
   "name": "@bonhomie/cloudinary-super-uploader",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "type": "module",
   "description": "A powerful React + Node Cloudinary toolkit with drag & drop, browser compression, EXIF checks, duplicate detection, signed uploads, and more.",
   "main": "dist/index.cjs",
@@ -15,37 +15,9 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./CloudinaryUploader": {
-      "import": "./dist/react/CloudinaryUploader.js",
-      "require": "./dist/react/CloudinaryUploader.cjs"
-    },
-    "./useCloudinaryUpload": {
-      "import": "./dist/react/useCloudinaryUpload.js",
-      "require": "./dist/react/useCloudinaryUpload.cjs"
-    },
-    "./node/uploadImage": {
-      "import": "./dist/node/uploadImage.js",
-      "require": "./dist/node/uploadImage.cjs"
-    },
-    "./node/uploadImages": {
-      "import": "./dist/node/uploadImages.js",
-      "require": "./dist/node/uploadImages.cjs"
-    },
-    "./node/compressImageNode": {
-      "import": "./dist/node/compressImageNode.js",
-      "require": "./dist/node/compressImageNode.cjs"
-    },
-    "./node/getExif": {
-      "import": "./dist/node/getExif.js",
-      "require": "./dist/node/getExif.cjs"
-    },
-    "./node/hashSHA256": {
-      "import": "./dist/node/hashSHA256.js",
-      "require": "./dist/node/hashSHA256.cjs"
-    },
-    "./node/validateQuality": {
-      "import": "./dist/node/validateQuality.js",
-      "require": "./dist/node/validateQuality.cjs"
+    "./node": {
+      "import": "./dist/node/index.js",
+      "require": "./dist/node/index.cjs"
     }
   },
   "keywords": [
@@ -53,25 +25,28 @@
     "cloudinary upload",
     "react uploader",
     "image uploader",
-    "drag and drop upload",
-    "sharp compression",
+    "drag and drop",
+    "sharp",
+    "compress",
     "exif",
-    "image hashing",
+    "hash",
     "react component",
     "node cloudinary"
   ],
   "scripts": {
     "build": "tsup src/index.js src/node/index.js --format esm,cjs --minify",
     "prepublishOnly": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No tests yet\""
   },
   "author": "Bonhomie",
   "license": "MIT",
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
   "dependencies": {
     "cloudinary": "^2.8.0",
     "exif-parser": "^0.1.12",
     "image-hash": "^7.0.1",
-    "react": "^19.2.0",
     "sharp": "^0.34.5"
   },
   "devDependencies": {

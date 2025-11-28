@@ -1,9 +1,9 @@
-import { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import useCloudinaryUpload from './useCloudinaryUpload';
 import './cloudinary-uploader.css';
 
 export default function CloudinaryUploader(props) {
-  const { images, progress, uploading, errors, upload, removeImage } =
+  const { images, progress, uploading, errors, upload, removeImage, reorderImages } =
     useCloudinaryUpload(props);
 
   const fileInput = useRef(null);
